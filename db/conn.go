@@ -10,10 +10,10 @@ import (
 )
 
 func ConnectDB() (*sql.DB, error) {
-	password := os.Getenv("POSTGRES_PASSWORD")
-	user := os.Getenv("POSTGRES_USER")
-	dbname := os.Getenv("POSTGRES_DB_NAME")
 	host := os.Getenv("POSTGRES_HOST")
+	user := os.Getenv("POSTGRES_USER")
+	password := os.Getenv("POSTGRES_PASSWORD")
+	dbname := os.Getenv("POSTGRES_DB_NAME")
 
 	portStr := os.Getenv("POSTGRES_PORT")
 	port, err := strconv.Atoi(portStr)

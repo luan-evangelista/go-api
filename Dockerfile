@@ -1,6 +1,6 @@
 FROM golang:1.24.1
 
-# set working directory
+# Set working directory
 WORKDIR /go/src/app
 
 # Copy the source code
